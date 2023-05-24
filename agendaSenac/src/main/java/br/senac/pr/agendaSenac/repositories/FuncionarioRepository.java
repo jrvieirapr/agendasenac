@@ -10,4 +10,5 @@ import br.senac.pr.agendaSenac.enums.SetorEnum;
 public interface FuncionarioRepository extends JpaRepository<Funcionario, Long> {
 	List<Funcionario> findBySetor(SetorEnum setor);
 
+	List<Funcionario> findByName(String name);
 }
